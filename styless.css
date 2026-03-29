@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnImprimir {
+    background-color: #3498db;
+    color: white;
+}
+
+#btnImprimir:hover {
+    background-color: #2980b9;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para impresión/PDF */
+@media print {
+    body {
+        background: white;
+    }
+    .button-group {
+        display: none; /* Oculta botones al imprimir */
+    }
+    input, textarea {
+        border: none;
+        outline: none;
+    }
+}
